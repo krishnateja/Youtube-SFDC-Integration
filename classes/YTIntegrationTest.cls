@@ -22,7 +22,7 @@ public class YTIntegrationTest {
         }catch(Exception e){
         
         }
-        endpoint = endpoint+searchString+'&type=video&key=AIzaSyCRBPLmRmuUUXJi7xKcMO4i7ScWr2E27-M';
+        endpoint = endpoint+searchString+'&type=video&key=-M';
     }
 
     
@@ -70,7 +70,7 @@ public class YTIntegrationTest {
     }
     public String fetchVideoDetails(String c){
        
-        endpoint1 = endpoint1+c+'&key=AIzaSyCRBPLmRmuUUXJi7xKcMO4i7ScWr2E27-M&fields=items(id,snippet(channelId,title,categoryId),statistics)&part=snippet,statistics';
+        endpoint1 = endpoint1+c+'&key=-M&fields=items(id,snippet(channelId,title,categoryId),statistics)&part=snippet,statistics';
         http h1 = new http();        
         httprequest req1 = new httprequest();  
         req1.setHeader('Accept', 'application/json');                  
